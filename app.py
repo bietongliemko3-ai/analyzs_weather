@@ -24,7 +24,7 @@ st.markdown("""
 # TẢI DỮ LIỆU SẠCH HOÀN TOÀN ĐÃ QUA XỬ LÝ TỪ NOTEBOOK
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Vs code/Dự án Python/weather_cleaned.csv") 
+    df = pd.read_csv("weather_cleaned.csv") 
     df['date'] = pd.to_datetime(df['date'])
     return df
 
